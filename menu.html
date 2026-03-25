@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Git-Bistro | Menú Andaluz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 180px; object-fit: cover; }
+        .card-content { padding: 15px; }
+        .card-title { font-size: 1.2rem; font-weight: bold; color: #e67e22; margin-bottom: 10px; }
+        .card-text { font-size: 0.9rem; color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabores de Andalucía ☀️</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <h2>Nuestra Carta Regional</h2>
+        <p>Disfruta de los clásicos de nuestra gastronomía, elaborados con productos locales de temporada.</p>
+        
+        <div class="menu-grid">
+            <div class="card">
+                <img src="salmorejo_cordobes.webp" alt="Salmorejo">
+                <div class="card-content">
+                    <div class="card-title">Salmorejo Cordobés</div>
+                    <p class="card-text">Crema fría de tomate, pan y aceite de oliva virgen extra, servido con virutas de jamón ibérico y huevo duro.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="fritura_malagueña.jpg" alt="Pescaíto Frito">
+                <div class="card-content">
+                    <div class="card-title">Fritura Malagueña</div>
+                    <p class="card-text">Variedad de pescado de la costa seleccionado diariamente, frito en aceite de oliva a la temperatura perfecta.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="rabo_toro.webp" alt="Rabo de Toro">
+                <div class="card-content">
+                    <div class="card-title">Rabo de Toro Estofado</div>
+                    <p class="card-text">Receta tradicional a fuego lento con vino tinto de la tierra y verduras de la huerta.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="migas_sanjose.jpg" alt="Migas">
+                <div class="card-content">
+                    <div class="card-title">Migas de San José</div>
+                    <p class="card-text">Receta tradicional de migas de harina de sémola, típica de los días lluviosos de nuestra tierra almeriense.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 - Gastronomía y Código | 1º DAM/DAW
+    </footer>
+</body>
+</html>
