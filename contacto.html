@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Git-Bistro | Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #e67e22; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-size: 1rem; }
+        button:hover { background: #d35400; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reservas y Contacto ☎️</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <h2>Haz tu reserva</h2>
+        <form>
+            <label>Nombre del Comensal:</label>
+            <input type="text" placeholder="Ej. Linus Torvalds">
+            
+            <label>Número de personas:</label>
+            <input type="number" min="1" max="10">
+            
+            <label>Mensaje / Alergias:</label>
+            <textarea rows="4" placeholder="Cuéntanos si celebras algo especial..."></textarea>
+            
+            <button type="button" onclick="alert('¡Reserva enviada al servidor Git!')">Enviar Reserva</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2026 - Equipo de Desarrollo 1º DAM/DAW
+    </footer>
+</body>
+</html>
